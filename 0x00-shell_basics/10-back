@@ -1,10 +1,2 @@
 #!/bin/bash
-# Function to change to the previous directory
-back() {
-    PREVIOUS_DIR=$(cat "$HOME/.previous_dir")
-    cd "$PREVIOUS_DIR" || { echo "Unable to change to the previous directory."; return 1; }
-    echo "Changed to the previous directory: $PREVIOUS_DIR"
-}
-
-# Invoke the function
-back
+cd ..

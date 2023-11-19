@@ -1,18 +1,2 @@
 #!/bin/bash
-
-# Function to list files in long format for a given directory
-list_files_long_format() {
-    local directory=$1
-    echo "Listing files in $directory:"
-    ls -lA "$directory"
-    echo ""
-}
-
-# List files in the current directory
-list_files_long_format "."
-
-# List files in the parent of the working directory
-list_files_long_format ".."
-
-# List files in the /boot directory
-list_files_long_format "/boot"
+ls -l . .. /boot
