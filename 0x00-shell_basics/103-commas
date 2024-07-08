@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sort -d -f -k1,1 -t $'\0' | awk '{ORS=NR%2?", ":"\n"}1'
+ls -mpa
